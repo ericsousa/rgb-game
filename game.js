@@ -21,20 +21,18 @@ function init () {
   rgbTitle.textContent = pickedColor
   resetBtn.textContent = 'New Colors'
   message.textContent = ''
-
   setSquaresAction()
 } 
 
 function gameLogic (square) {
   var clickedColor = square.style.backgroundColor
-
+  
   if (clickedColor === pickedColor) {
     message.textContent = 'Correct!'
     changeColorWinner(clickedColor)
     // if the winning color is light set h1 text to dark
     pickedColorTone === 'light' ? h1.style.color = '#232323' : h1.style.color = 'white'
     resetBtn.textContent = 'Play Again?'
-    
   } else {
     square.style.backgroundColor = '#232323'
     message.textContent = 'Try Again'
