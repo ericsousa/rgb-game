@@ -12,6 +12,9 @@ h1 {
   font-weight: normal;
   text-transform: uppercase;
   padding: 20px 0;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 h1 span {
   font-size: 1.8em;
@@ -35,6 +38,9 @@ h1 span {
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 #message-bar button.selected {
   background: #232323;
@@ -62,6 +68,9 @@ h1 span {
   margin: 1.66%;
   float: left;
   border-radius: 10px;
+  transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -webkit-transition: background 0.5s;
 }
 
 
